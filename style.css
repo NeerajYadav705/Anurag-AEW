@@ -11,9 +11,11 @@ body {
 
 /* Styles for Navbar */
 nav {
-    background-color: #b2b0b0;
+    background-color: #33695d;
     color: #fff;
     padding: 15px 0;
+    position: fixed;
+    width: 100%;
 }
 
 .container1 {
@@ -52,26 +54,29 @@ nav {
 /* main */
 
 .main-section{
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
     padding: 2vh;
     gap: 4vh;
 }
 .container2>h2{
+    color: #333;
+    width: 100%;
     font-weight: 900;
-    font-size: 5vh;
+    font-size: 10vh;
     text-align: center;
 }
 .container2>p{
-    font-size: 2.5vh;
+    font-size: 3vh;
     font-weight: 200;
     text-align: center;
-    color: rgb(146, 146, 146);
 }
 
 /* Styles for Products Page */
@@ -93,7 +98,7 @@ nav {
 }
 
 .product {
-    background: #f9f9f9;
+    background: #a2a7a64b;
     border-radius: 5px;
     padding: 20px;
     display: flex;
@@ -138,8 +143,8 @@ nav {
 }
 
 .service {
-    height: 50vh;
-    background: #e7e6e639;
+    height: fit-content;
+    background: #a4a4e716;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -223,7 +228,7 @@ nav {
 
 .btn {
     display: inline-block;
-    background: #333;
+    background: #4a9081;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -232,7 +237,7 @@ nav {
 }
 
 .btn:hover {
-    background: #555;
+    background: #33695d;
 } 
 
 /* form page */
@@ -273,7 +278,7 @@ nav {
     background-color: #ececec;
   }
   input[type="submit"] {
-    background-color:  #333;
+    background-color:  #8a8de4bc;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -282,7 +287,7 @@ nav {
     float: right;
   }
   input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #8a8de4e6;
   }
   .error {
     color: red;
@@ -317,14 +322,22 @@ nav {
 
 
 
+
+
+
+
+
+
+
+
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .nav-menu {
         display: none;
         flex-direction: column;
-        background-color: #b0b0b0;
+        background-color: #33695d;
         position: absolute;
-        top: 15vh;
+        top: 11.09vh;
         left: 0;
         width: 100%;
         align-items: center;
@@ -345,6 +358,65 @@ nav {
         margin-right: 20px;
     }
 
+
+
+    .container1{
+        height: 8vh;
+    }
+    .container1>img{
+        width: 13vh;
+    }
+
+    /* main page */
+    .main-section{
+        height: 100vh;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh;
+        gap: 4vh;
+    }
+    .container2>h2{
+        color: #333;
+        width: 100%;
+        font-weight: 900;
+        font-size: 6vh;
+        text-align: center;
+    }
+    .container2>p{
+        font-size: 2.5vh;
+        font-weight: 200;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+
+
+    /* aboout us */
+   
+    .about-section p {
+        margin-bottom: 4vh;
+        text-align: center;
+        font-size: 2vh;
+        width: 100%;
+    }
+    .about-section h2{
+        text-align: center;
+        font-size: 8vh;
+        margin-top:10vh;
+        margin-bottom: 3vh;
+    }
+
+    /* service */
+
+    .container-in{
+        display: flex;
+        flex-direction: column;
+    }
+    /* form page */
+
     .form_page {
         flex-wrap: wrap;
         padding: 3vh;
@@ -357,11 +429,11 @@ nav {
         font-weight: 400;
         margin-bottom: 5vh;
       }
-      #form_page_in > p {
-        font-size: 2.3vh;
-        font-weight: 400;
-        margin-top: 5vh;
-        margin-left: 1vh;
+      #icons>p {
+        font-size: 2vh;
+      }
+      #diff{
+        font-size: 2vh;
       }
       #icons{
         display: flex;
