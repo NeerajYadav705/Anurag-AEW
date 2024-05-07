@@ -344,4 +344,34 @@ nav {
         font-size: 24px;
         margin-right: 20px;
     }
+
+    .form_page {
+        flex-wrap: wrap;
+        padding: 3vh;
+      }
+      .form_page > div {
+        width: 100%;
+      }
+      #form_page_in > h1 {
+        font-size: 7.4vh;
+        font-weight: 400;
+        margin-bottom: 5vh;
+      }
+      #form_page_in > p {
+        font-size: 2.3vh;
+        font-weight: 400;
+        margin-top: 5vh;
+        margin-left: 1vh;
+      }
+      #icons{
+        display: flex;
+        align-items: center;
+        gap: 1.5vh;
+        margin-bottom: 2vh;
+        margin-left: 1vh;
+      }
+      #icons>img{
+        width: 2vh;
+        height: 2vh;
+      }
 }
